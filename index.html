@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Survey Form FCC</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="form-container">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="survey-form">
+      <div class='labels'>
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="inputs">
+        <input id="name" type="text" class="input-fields" name="name" placeholder="Mike O'Malley" required>
+      </div>
+
+      <div class='label'>
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="inputs">
+        <input id="email" class="input-fields" type="email" name="email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="labels">
+        <label id="number-label" for="age">Age:</label>
+      </div>
+      <div class="inputs">
+        <input id="number" class="input-fields" type="number" name="age" placeholder="i.e. 22" min="18" max="100">
+      </div>
+
+      <label for="colour" id="colours">Select a language:</label>
+      <select name="colour" id="dropdown">
+        <option value="red">JavaScript</option>
+        <option value="yellow">Ruby</option>
+        <option value="violet">Golang</option>
+        <option value="green">Java</option>
+        <option value="orange">Python</option>
+      </select>
+
+      <fieldset id="radioboxes">
+        <legend>Best tips for learning to code:</legend>
+        <label><input type="radio" value="1" name="radio-buttons">Networking with Community</label>
+        <label><input type="radio" value="2" name="radio-buttons">Online tutorials</label>
+        <label><input type="radio" value="3" name="radio-buttons">Building projects</label>
+        <label><input type="radio" value="5" name="radio-buttons">Helping other people through challenges</label>
+      </fieldset>
+
+      <fieldset id="checkboxes">
+        <legend>Favourite technologies</legend>
+        <label><input type="checkbox" value="1" name="favourite">Front End Technology</label>
+        <label><input type="checkbox" value="2" name="favourite">Backend Technology</label>
+        <label><input type="checkbox" value="3" name="favourite">React</label>
+        <label><input type="checkbox" value="4" name="favourite">VueJS</label>
+        <label><input type="checkbox" value="5" name="favourite">Python</label>
+        <label><input type="checkbox" value="6" name="favourite">Ruby On Rails</label>
+        <label><input type="checkbox" value="5" name="favourite">GoLang</label>
+        <label><input type="checkbox" value="6" name="favourite">JavaScript</label>
+      </fieldset>
+
+      <label for="comments">Suggestions / Comments:</label>
+        <textarea type="textarea" name="comments" rows="6" coloumns="10"></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+</body>
+</html>

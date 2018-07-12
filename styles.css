@@ -1,0 +1,57 @@
+:root {
+  --main-font-style: helvetica;
+}
+
+body {
+  background-color: #a9d7d1;
+  text-align: center;
+  min-width: 320px;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: var(--main-font-style);
+}
+
+#form-container {
+  background-color: white;
+  border-radius: 5px;
+  font-family: var(--main-font-style);
+  font-weight: 100;
+  margin: 0 auto;
+  padding: 10px;
+  width: 75%;
+}
+
+input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+input[type=email] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+input[type=number] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+#radioboxes, #checkboxes {
+  display: grid;
+  margin: 0 auto;
+  width: 55%;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+#checkboxes {
+  margin-bottom: 2rem;
+}
+
+#submit {
+  margin-top: 2rem;
+  display: block;
+  margin: 2rem auto;
+}
